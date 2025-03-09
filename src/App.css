@@ -1,36 +1,51 @@
-
-
-/* .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+@font-face {
+  font-family: Tanha;
+  src: url("/font/Tanha.eot");
+  src: url("/font/Tanha.eot?#iefix")
+      format("embedded-opentype"),
+    url("/font/Tanha.woff") format("woff"),
+    url("/font/Tanha.ttf") format("truetype");
+  font-weight: normal;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+body {
+  font-family: "Tanha";
+  background: rgb(233, 227, 233);
+  background: linear-gradient(
+    54deg,
+    rgba(233, 227, 233, 1) 0%,
+    rgba(246, 230, 200, 1) 47%,
+    rgba(255, 255, 255, 0.9136904761904762) 93%
+  );
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .bgImage{
+  background-image: url(/img/11.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
 } */
 
-
-.bg1{
-background-image: url(../public/asaat/12.gif);
-/* background-repeat:no-repeat;
-background-size: cover; */
-
+.bg1 {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
-.bg2{
-background-image: url(../public/asaat/12.gif);
-background-repeat:no-repeat;
-background-size: cover;
+
+@keyframes spin{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg
+  );
+  }
+}
+.spin{
+  animation: spin 40s linear infinite;
 }
